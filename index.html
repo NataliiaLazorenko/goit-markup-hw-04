@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашняя робота 1</title>
+    <title>Веб Студия</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -38,13 +38,19 @@
         <!-- МОЖНА ОБЕРНУТИ У address -->
         <ul class="header-connect list">
           <li class="header-connect-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="header-mail link" href="mailto:info@devstudio.com">
+              <svg class="icon-header-connect" width="16px" height="11px">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="header-connect-item">
-            <a class="header-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="header-tel link" href="tel:+380961111111">
+              <svg class="icon-header-connect" width="10px" height="15px">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -66,28 +72,48 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Преимущества</h2>
           <ul class="list">
-            <li class="list-item icon-antenna">
+            <li class="list-item">
+              <div class="benefits-icon">
+                <svg class="icon-benefits-list">
+                  <use href="./images/sprite.svg#benefits-antenna"></use>
+                </svg>
+              </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="list-item icon-clock">
+            <li class="list-item">
+              <div class="benefits-icon">
+                <svg class="icon-benefits-list">
+                  <use href="./images/sprite.svg#benefits-clock"></use>
+                </svg>
+              </div>
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="list-item icon-diagram">
+            <li class="list-item">
+              <div class="benefits-icon">
+                <svg class="icon-benefits-list">
+                  <use href="./images/sprite.svg#benefits-diagram"></use>
+                </svg>
+              </div>
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="list-item icon-astonaut">
+            <li class="list-item">
+              <div class="benefits-icon">
+                <svg class="icon-benefits-list">
+                  <use href="./images/sprite.svg#benefits-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -151,32 +177,48 @@
               <p class="position" lang="en">Product Designer</p>
               <ul class="social-links list">
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Инстаграм"
-                    ><img
-                      src="./images/social-icons/instagram.svg"
-                      alt="Иконка Инстаграм"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Инстаграм"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Твиттер"
-                    ><img
-                      src="./images/social-icons/twitter.svg"
-                      alt="Иконка Твиттер"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Твиттер"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Фейсбук"
-                    ><img
-                      src="./images/social-icons/facebook.svg"
-                      alt="Иконка Фейсбук"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Фейсбук"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Линкедин"
-                    ><img
-                      src="./images/social-icons/linkedin.svg"
-                      alt="Иконка Линкедин"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Линкедин"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -192,32 +234,48 @@
               <p class="position" lang="en">Frontend Developer</p>
               <ul class="social-links list">
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Инстаграм"
-                    ><img
-                      src="./images/social-icons/instagram.svg"
-                      alt="Иконка Инстаграм"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Инстаграм"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Твиттер"
-                    ><img
-                      src="./images/social-icons/twitter.svg"
-                      alt="Иконка Твиттер"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Твиттер"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Фейсбук"
-                    ><img
-                      src="./images/social-icons/facebook.svg"
-                      alt="Иконка Фейсбук"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Фейсбук"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Линкедин"
-                    ><img
-                      src="./images/social-icons/linkedin.svg"
-                      alt="Иконка Линкедин"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Линкедин"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -233,32 +291,48 @@
               <p class="position" lang="en">Marketing</p>
               <ul class="social-links list">
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Инстаграм"
-                    ><img
-                      src="./images/social-icons/instagram.svg"
-                      alt="Иконка Инстаграм"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Инстаграм"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Твиттер"
-                    ><img
-                      src="./images/social-icons/twitter.svg"
-                      alt="Иконка Твиттер"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Твиттер"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Фейсбук"
-                    ><img
-                      src="./images/social-icons/facebook.svg"
-                      alt="Иконка Фейсбук"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Фейсбук"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Линкедин"
-                    ><img
-                      src="./images/social-icons/linkedin.svg"
-                      alt="Иконка Линкедин"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Линкедин"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -274,32 +348,48 @@
               <p class="position" lang="en">UI Designer</p>
               <ul class="social-links list">
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Инстаграм"
-                    ><img
-                      src="./images/social-icons/instagram.svg"
-                      alt="Иконка Инстаграм"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Инстаграм"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Твиттер"
-                    ><img
-                      src="./images/social-icons/twitter.svg"
-                      alt="Иконка Твиттер"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Твиттер"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Фейсбук"
-                    ><img
-                      src="./images/social-icons/facebook.svg"
-                      alt="Иконка Фейсбук"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Фейсбук"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-links-item">
-                  <a class="link" href="" aria-label="Ccылка на Линкедин"
-                    ><img
-                      src="./images/social-icons/linkedin.svg"
-                      alt="Иконка Линкедин"
-                  /></a>
+                  <a
+                    class="social-network link"
+                    href=""
+                    aria-label="Ccылка на Линкедин"
+                  >
+                    <svg class="icon-social-link">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -313,46 +403,70 @@
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list">
             <li class="list-item">
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo1-ya-co.svg"
-                  alt="Логотип компании Ya&amp;Co"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="Логотип компании Ya&amp;Co"
+              >
+                <svg width="44px" height="49px">
+                  <use href="./images/sprite.svg#logo-ya-and-co"></use>
+                </svg>
+              </a>
             </li>
             <li class="list-item">
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo2-tagline-here.svg"
-                  alt="Логотип компании TAGLINE HERE"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="Логотип компании TAGLINE HERE"
+              >
+                <svg width="40px" height="52px">
+                  <use href="./images/sprite.svg#logo-tagline-here"></use>
+                </svg>
+              </a>
             </li>
             <li class="list-item">
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo3-company.svg"
-                  alt="Логотип компании COMPANY"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="Логотип компании COMPANY"
+              >
+                <svg width="41px" height="43px">
+                  <use href="./images/sprite.svg#logo-company"></use>
+                </svg>
+              </a>
             </li>
             <li class="list-item">
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo4-foster-peters.svg"
-                  alt="Логотип компании Foster Peters"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="Логотип компании Foster Peters"
+              >
+                <svg width="80px" height="42px">
+                  <use href="./images/sprite.svg#logo-foster-peters"></use>
+                </svg>
+              </a>
             </li>
             <li class="list-item">
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo5-brand.svg"
-                  alt="Логотип компании Brand"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="Логотип компании Brand"
+              >
+                <svg width="59px" height="47px">
+                  <use href="./images/sprite.svg#logo-brand"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="clients-list-link" href=""
-                ><img
-                  src="./images/clients/logo6-tag-line.svg"
-                  alt="логотип компании TAG LINE"
-              /></a>
+              <a
+                class="clients-list-link"
+                href=""
+                aria-label="логотип компании TAG LINE"
+              >
+                <svg width="88px" height="45px">
+                  <use href="./images/sprite.svg#logo-tag-line"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -385,22 +499,59 @@
           <b class="title">Присоединяйтесь</b>
           <ul class="list">
             <li class="social-links-item icon-instagram">
-              <a class="link" href="" aria-label="Ссылка на Инстаграм"></a>
+              <a
+                class="social-network link"
+                href=""
+                aria-label="Ссылка на Инстаграм"
+              >
+                <svg class="icon-social-link">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-links-item icon-twitter">
-              <a class="link" href="" aria-label="Ссылка на Твиттер"></a>
+              <a
+                class="social-network link"
+                href=""
+                aria-label="Ссылка на Твиттер"
+              >
+                <svg class="icon-social-link">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-links-item icon-facebook">
-              <a class="link" href="" aria-label="Ссылка на Фейсбук"></a>
+              <a
+                class="social-network link"
+                href=""
+                aria-label="Ссылка на Фейсбук"
+              >
+                <svg class="icon-social-link">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-links-item icon-linkedin">
-              <a class="link" href="" aria-label="Ссылка на Линкедин"></a>
+              <a
+                class="social-network link"
+                href=""
+                aria-label="Ссылка на Линкедин"
+              >
+                <svg class="icon-social-link">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div>
           <b class="title">Подпишитесь на рассылку</b>
-          <button class="button">Подписаться</button>
+          <button class="button">
+            Подписаться
+            <svg class="icon-sign" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-sign"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>

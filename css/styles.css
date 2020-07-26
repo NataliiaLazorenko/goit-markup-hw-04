@@ -35,6 +35,8 @@ h1 {
   --text-dark-theme-color: rgba(255, 255, 255, 0.6);
   --text-light-theme-color: #757575;
   --accent-color: #2196f3;
+
+  --main-icon-color: #afb1b8;
 }
 
 /* для body можна не задавати клас, а звернутися по імені тега */
@@ -71,6 +73,9 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -148,14 +153,20 @@ img {
   color: var(--text-light-theme-color);
 }
 
-/* в html додаємо додатковий клас current для активної сторінки */
-.site-nav .link.current,
+.icon-header-connect {
+  margin-right: 10px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .header-connect .link:hover,
 .header-connect .link:focus {
-  padding-bottom: 0;
   color: var(--accent-color);
+}
+
+/* в html додаємо додатковий клас current для активної сторінки */
+.site-nav .link.current {
+  padding-bottom: 0;
 }
 
 .site-nav .link.current::after {
@@ -164,7 +175,6 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  border: none;
   margin-top: 28px;
 
   background: var(--accent-color);
@@ -176,6 +186,20 @@ img {
 
 .header-connect-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.header-connect-item > .link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-header-connect {
+  fill: currentColor;
+}
+
+.header-connect-item > .link:hover,
+.header-connect-item > .link:focus {
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -219,9 +243,14 @@ img {
   background-color: var(--accent-color);
 }
 
-.hero .button {
+.hero > .button {
   margin: 0 auto;
   padding: 10px 32px;
+}
+
+.hero > .button:hover,
+.hero > .button:focus {
+  background-color: #188ce8;
 }
 
 /* Sections */
@@ -266,12 +295,29 @@ img {
   display: flex;
 }
 
-.benefits > .list-item {
+.benefits .list-item {
   width: calc((100% - 90px) / 4);
   /* width: 270px; */
 }
 
-.benefits .list-item::before {
+.benefits-icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
+}
+
+.icon-benefits-list {
+  width: 70px;
+  height: 70px;
+}
+
+/* Альтернативний варіант додавання іконок через background-image */
+/* .benefits .list-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -281,9 +327,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
-}
+} */
 
-.list-item.icon-antenna::before {
+/* Створити додаткові класи для елементів списку */
+/* .list-item.icon-antenna::before {
   background-image: url('../images/benefits/image1-antenna.svg');
 }
 
@@ -297,7 +344,7 @@ img {
 
 .list-item.icon-astonaut::before {
   background-image: url('../images/benefits/image4-astronaut.svg');
-}
+} */
 
 .benefits .title {
   margin-bottom: 10px;
@@ -311,7 +358,7 @@ img {
   display: flex;
 }
 
-.what-we-do > .list-item {
+.what-we-do .list-item {
   width: calc((100% - 60px) / 3);
 }
 
@@ -370,6 +417,30 @@ img {
   margin-right: 10px;
 }
 
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--main-icon-color);
+}
+
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
+
+.team .social-network:hover,
+.team .social-network:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
 /* Clients */
 .clients .list {
   display: flex;
@@ -380,7 +451,8 @@ img {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #afb1b8;
+  fill: var(--main-icon-color);
+  border: 1px solid var(--main-icon-color);
   border-radius: 4px;
   width: 170px;
   height: 90px;
@@ -389,6 +461,7 @@ img {
 .clients .clients-list-link:hover,
 .clients .clients-list-link:active,
 .clients .clients-list-link:focus {
+  fill: #2196f3;
   border-color: var(--accent-color);
   outline: none;
 }
@@ -444,30 +517,17 @@ img {
   display: flex;
 }
 
-.join-us .social-links-item {
-  width: 44px;
-  height: 44px;
-
-  background-repeat: no-repeat;
-  background-position: center;
+.join-us .social-network {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
 }
 
-.join-us .icon-instagram {
-  background-image: url('../images/social-icons/instagram-dark-bg.svg');
+.join-us .icon-social-link {
+  fill: #ffffff;
 }
 
-.join-us .icon-twitter {
-  background-image: url('../images/social-icons/twitter-dark-bg.svg');
-}
-
-.join-us .icon-facebook {
-  background-image: url('../images/social-icons/facebook-dark-bg.svg');
-}
-
-.join-us .icon-linkedin {
-  background-image: url('../images/social-icons/linkedin-dark-bg.svg');
+.join-us .social-network:hover,
+.join-us .social-network:focus {
+  background-color: var(--accent-color);
 }
 
 .footer .button {
@@ -479,14 +539,21 @@ img {
   align-items: center;
 }
 
-.footer .button::after {
+.footer .icon-sign {
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
+/* Альтернативний варіант додавання іконки через псевдоелемент та background-image */
+/* .footer .button::after {
   content: '';
   width: 24px;
   height: 24px;
   margin-left: 10px;
 
   background-image: url('../images/footer/icon-sign.svg');
-}
+} */
 
 /* Сторінка Портфоліо */
 .portfolio .filter {
@@ -503,7 +570,7 @@ img {
   flex-wrap: wrap;
 }
 
-.portfolio > .card-item {
+.portfolio .card-item {
   width: calc((100% - 60px) / 3);
   /* width: 370px; */
 }
